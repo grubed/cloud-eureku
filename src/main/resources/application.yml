@@ -1,0 +1,10 @@
+spring:
+  profiles:
+    active: dev3
+  application:
+    name: eureka-server-high
+dev:
+  host: localhost
+  dev1Port: 8111
+  dev2Port: 8112
+  dev3Port: 8113

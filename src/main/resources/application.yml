@@ -3,7 +3,7 @@ spring:
     active: dev3
   application:
     name: eureka-server-high
-dev:
+prod:
   host: localhost
   dev1Port: 8111
   dev2Port: 8112

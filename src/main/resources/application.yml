@@ -4,7 +4,7 @@ spring:
   application:
     name: eureka-server-high
 prod:
-  host: center.wisready.com
+  host: localhost
   dev1Port: 8111
   dev2Port: 8112
   dev3Port: 8113

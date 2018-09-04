@@ -4,7 +4,7 @@ spring:
   application:
     name: eureka-server-high
 prod:
-  host: localhost
+  host: eurekav1.default.svc.cluster.local
   dev1Port: 8111
   dev2Port: 8112
   dev3Port: 8113

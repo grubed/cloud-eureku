@@ -1,6 +1,6 @@
 spring:
   profiles:
-    active: dev3
+    active: @activatedProperties@
   application:
     name: eureka-server-high
 prod:

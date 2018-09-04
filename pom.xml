@@ -41,7 +41,40 @@
 			<artifactId>spring-cloud-starter-netflix-eureka-server</artifactId>
 		</dependency>
 	</dependencies>
-
+	<dependencyManagement>
+		<dependencies>
+			<dependency>
+				<groupId>org.springframework.cloud</groupId>
+				<artifactId>spring-cloud-dependencies</artifactId>
+				<version>Finchley.SR1</version>
+				<type>pom</type>
+				<scope>import</scope>
+			</dependency>
+		</dependencies>
+	</dependencyManagement>
+	<profiles>
+		<profile>
+			<id>prod1</id>
+			<properties>
+				<activatedProperties>prod1</activatedProperties>
+			</properties>
+			<activation>
+				<activeByDefault>true</activeByDefault>
+			</activation>
+		</profile>
+		<profile>
+			<id>prod2</id>
+			<properties>
+				<activatedProperties>prod2</activatedProperties>
+			</properties>
+		</profile>
+		<profile>
+			<id>prod3</id>
+			<properties>
+				<activatedProperties>prod3</activatedProperties>
+			</properties>
+		</profile>
+	</profiles>
 	<distributionManagement>
 		<repository>
 			<id>nexus release</id>

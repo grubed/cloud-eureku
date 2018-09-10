@@ -3,6 +3,10 @@ spring:
     active: @activatedProperties@
   application:
     name: eureka-server-high
+eureka:
+  client:
+    register-with-eureka: false
+    fetch-registry: false
 prod:
   host: eurekav1.default.svc.cluster.local
   dev1Port: 8111

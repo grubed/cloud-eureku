@@ -3,6 +3,8 @@ spring:
     active: @activatedProperties@
   application:
     name: eureka-server-high
+eureka:
+  server.enable-self-preservation: false
 prod:
   host1: eurekav1.default.svc.cluster.local
   host2: eurekav2.default.svc.cluster.local

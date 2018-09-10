@@ -3,7 +3,7 @@ server:
 eureka:
   client:
     service-url:
-      defaultZone: http://${prod.host}:${prod.dev1Port}/eureka,http://${prod.host}:${prod.dev2Port}/eureka
+      defaultZone: http://${prod.host1}:${prod.dev1Port}/eureka,http://${prod.host2}:${prod.dev2Port}/eureka
 
 
 

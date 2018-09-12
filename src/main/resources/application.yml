@@ -5,9 +5,9 @@ spring:
     name: eureka-server-high
 
 prod:
-  host1: eurekav1.default.svc.cluster.local
-  host2: eurekav2.default.svc.cluster.local
-  host3: eurekav3.default.svc.cluster.local
+  host1: localhost
+  host2: localhost
+  host3: localhost
   dev1Port: 8111
   dev2Port: 8112
   dev3Port: 8113
